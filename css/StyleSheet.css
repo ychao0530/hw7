@@ -1,0 +1,113 @@
+﻿
+html {
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+#container {
+    background: border-box;
+    padding: 20px;
+    margin: 0 auto;
+    
+    width: 900px;
+}
+
+
+
+#main {
+    background: white;
+    padding: 10px;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+   
+}
+
+h3 {
+    color:blue;
+    font-size: xx-large;
+    text-align: center;
+}
+#footer {
+    background: blue;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align:center;
+}
+
+#menu {
+    background: #fad187;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.level1 {
+    color: black;
+  
+    font-size: large;
+    font-weight: bold;
+}
+
+.level2 {
+    color: grey;
+    font-size: medium;
+
+}
+
+.level3 {
+    color: white;
+    background-color: blue;
+  
+    font-size: small;
+}
+
+.hdr_img {
+    float: right;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#LoginStatus1 {
+    float:right;
+    color: black;
+  
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+.cssgridview {
+    border: solid 2px black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+    .cssgridview td {
+        padding: 10px; 
+        border:solid 1px;
+        color:black;
+    }
+
+    .cssgridview th {
+        padding: 10px;
+        color: black;
+        font-family:Cambria;
+       background-color:#d5d222;
+       font-family:'Blackadder ITC';
+       font-size:xx-large;
+    }
+
+    .cssgridview .alt {
+    background-color: rgba(215, 155, 31, 0.72);
+}

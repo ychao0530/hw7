@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" CodeFile="lolMasterPage.master.vb" Inherits="lolMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="header"  >
+            <asp:Image Class="hdr_img" ID="Image1" runat="server" Height="78px" ImageUrl="~/lol2.jpg" Width="78px" />
+            <h1>League of Legends</h1>
+
+        </div>
+
+        <div id="menu">
+
+            &nbsp;<asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="login" LogoutText="logout"  />
+
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="horizontal" StaticDisplayLevels="1">
+
+                <LevelMenuItemStyles>
+                    <asp:MenuItemStyle CssClass="level1" />
+                    <asp:MenuItemStyle CssClass="level2" />
+                    <asp:MenuItemStyle CssClass="level3" />
+                    
+                </LevelMenuItemStyles>
+                
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+        </div>
+
+        <div id="main">
+       
+             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+               </asp:ContentPlaceHolder>
+
+            </div>
+
+        <div id="footer">
+            <asp:Label ID="labeltodaydate" runat="server" Text="Label"></asp:Label>
+            <br />
+           © 2014 Software Design & Development
+        </div>
+    </div>
+    </form>
+</body>
+</html>
